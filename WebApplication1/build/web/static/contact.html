@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="index.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Creative Webpage</title>
+    <style>
+        /* CSS for the navigation bar */
+        header {
+            background-color: #3498db; /* Light Blue */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px; /* Add padding to create button-like blocks */
+            background-color: #3498db; /* Light Blue */
+            transition: background-color 0.3s; /* Add transition for smooth hover effect */
+        }
+        nav a:hover {
+            background-color: #1f618d; /* Dark Blue on hover */
+        }
+        /* Highlight the active page */
+        nav a.active {
+            font-weight: bold; /* Make the active page link bold */
+        }
+
+        /* CSS for the main content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; /* Center the text within the container */
+        }
+
+        /* CSS for the contact form */
+        .contact-form {
+            background-color: #ecf0f1; /* Light Gray */
+            padding: 20px;
+            text-align: left;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* CSS for the address */
+        .address {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ecf0f1; /* Light Gray */
+            text-align: left;
+        }
+
+        /* CSS for the footer */
+        footer {
+            background-color: #3498db; /* Light Blue */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+		
+        /* CSS for the WhatsApp link */
+        .whatsapp-link {
+            text-align: center; /* Center the content within the div */
+            margin-top: 20px; /* Add some top margin to separate it from the address */
+        }		
+		
+		
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Creative Webpage</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="active">Contact</a> <!-- Highlight the Contact page in navigation -->
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us using the contact form below:</p>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- Address Section -->
+        <div class="address">
+            <h3>Our Address</h3>
+            <p>123 Creative Street</p>
+            <p>City, State, ZIP Code</p>
+            <p>Country</p>
+        </div>
+    </div>
+
+<div class="whatsapp-link">
+    <h3>Contact Us on WhatsApp</h3>
+    <p>Click the link or icon below to chat with us on WhatsApp:</p>
+    <a href="https://wa.me/0655887245" target="_blank">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+    </a>
+</div>
+
+<i class="fa fa-whatsapp" style="font-size:24px">
+
+
+
+    <footer>
+        &copy; 2023 Creative Webpage. All rights reserved.
+    </footer>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,135 @@
+/* Common Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Navigation Styles */
+
+header {
+    background-color: #3498db; /* Light Blue */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #3498db; /* Light Blue */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #fff; /* Change text color to white on hover */
+    background-color: #ecf0f1;
+    border-radius: 10px;
+}
+
+/* End Navigation Styles */
+
+.header2-container {
+    background-color: #1f618d; /* Dark Blue */
+}
+
+/* Animate header on hover */
+header:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+/* Portfolio Item Styles */
+.portfolio-item {
+    margin-bottom: 20px;
+    background-color: #ecf0f1; /* Light Gray */
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s; /* Smooth shadow effect on hover */
+    border-radius: 10px;
+    overflow: hidden; /* Ensure images don't exceed the circular container */
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s; /* Add zoom effect on hover */
+    border-radius: 50%; /* Create circular image containers */
+    position: relative; /* Position relative for absolute positioning */
+    margin-bottom: 20px;
+    background-color: #ecf0f1; /* Light Gray */
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s; /* Smooth shadow effect on hover */
+    border-radius: 10px;
+    overflow: hidden; /* Ensure images don't exceed the circular container */
+}
+
+/* Remove the shadow effect on hover */
+.portfolio-item:hover img {
+    box-shadow: none; /* Remove the shadow on hover */
+}
+
+/* Text on top of images when scrolling */
+.portfolio-item:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3498db; /* Light Blue */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+footer:hover {
+    background-color: #1f618d; /* Dark Blue on hover */
+    color: #fff; /* Change text color to white on hover */
+}
+
+/* WhatsApp Link Styles */
+.whatsapp-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366; /* WhatsApp Green */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.whatsapp-link a:hover {
+    background-color: #128c7e; /* Darker green on hover */
+}
+
+/* Additional Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 10px;
+}

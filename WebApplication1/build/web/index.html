@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Webpage</title>
+    <style>
+        /* CSS for the navigation bar */
+        header {
+            background-color: #3498db; /* Light Blue */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px; /* Add padding to create button-like blocks */
+            background-color: #3498db; /* Light Blue */
+            transition: background-color 0.3s; /* Add transition for smooth hover effect */
+            border-radius: 20px; /* Add round corners */
+        }
+        nav a:hover {
+            background-color: #fff; /* White on hover */
+            color: #3498db; /* Blue text color on hover */
+            border-radius: 20px; /* Add round corners on hover */
+        }
+        /* Highlight the active page */
+        nav a.active {
+            font-weight: bold; /* Make the active page link bold */
+        }
+
+        /* CSS for the main content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; /* Center the text within the container */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* CSS for the portfolio items */
+        .portfolio-item {
+            width: calc(25% - 40px); /* 4 items per row with margin in between */
+            margin: 20px;
+            background-color: #ecf0f1; /* Light Gray */
+            padding: 40px; /* Increase padding for enlargement */
+            text-align: center;
+            border-radius: 20px; /* Add round corners */
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* CSS for the footer */
+        footer {
+            background-color: #3498db; /* Light Blue */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .background{
+            /*background-image: url("static/a13.jpeg");*/
+                filter: blur(8px);
+                -webkit-filter: blur(8px);
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dev Hive</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="signup.html">Register</a>
+            <a href="static/About.html">About</a>
+            <a href="static/contact.html">Contact</a>
+            <a href="#">Portfolio</a>     
+        </nav>
+    </header>
+    <div class="background">
+        <!--<img src="static/a13.jpeg" alt="alt"/>-->
+    </div>
+
+    <div class="container">
+        <div>
+            <h2>Welcome to Our World of Creativity</h2>
+            <p>Explore the beauty of our creative work and services. We are passionate about what we do.</p>
+        </div>
+        <div class="portfolio-item" style="background-color: #85c1e9;"> <!-- Light Blue -->
+            <img src="static/a6.jpeg" alt="Creative Project 1">
+            <p>Project 1: A stunning masterpiece that combines art and technology.</p>
+        </div>
+        <div class="portfolio-item" style="background-color: #5dade2;"> <!-- Slightly Darker Blue -->
+            <img src="static/a5.jpeg" alt="Creative Project 2">
+            <p>Project 2: An interactive experience that will leave you in awe.</p>
+        </div>
+        <div class="portfolio-item" style="background-color: #85c1e9;"> <!-- Light Blue -->
+            <img src="static/a4.jpeg" alt="Creative Project 3">
+            <p>Project 3: Another creative masterpiece.</p>
+        </div>
+        <div class="portfolio-item" style="background-color: #85c1e9;"> <!-- Light Blue -->
+            <img src="static/a2.jpeg" alt="Creative Project 4">
+            <p>Project 4: Placeholder project description.</p>
+        </div>
+        <div class="portfolio-item" style="background-color: #85c1e9;"> <!-- Light Blue -->
+            <img src="static/a11.jpeg" alt="Creative Project 5">
+            <p>Project 5: Placeholder project description.</p>
+        </div>
+        <div class="portfolio-item" style="background-color: #85c1e9;"> <!-- Light Blue -->
+            <img src="static/a12.jpeg" alt="Creative Project 6">
+            <p>Project 6: Placeholder project description.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Creative Webpage. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="static/signup.css">
+    <style>
+        body {
+            background-image: url('static/a10.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+		a {
+            color: black; /* Set the text color to black */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Sign Up</h2>
+    <form action="RegisterServlet.do" method="post">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="cellno"><b>Cell No</b></label>
+        <input type="text" placeholder="Enter Cell No" name="cellno" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit" style="background: #ff6600; color: #fff; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Sign Up</button>
+
+        <p>Already have an account? <a href="form.html">Log In</a></p>
+    </form>
+</div>
+
+</body>
+</html>
